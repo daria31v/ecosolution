@@ -1,27 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald:wght@300;400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #f3f5fa;
+  font-family: "Fira Sans", sans-serif;
+}
+
+@layer utilities {
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+  .padding-container {
+    @apply px-6 xl:px-0
+  }
+  .btn_green {
+    @apply flex justify-center items-center gap-3 px-4 py-[10px] text-[16px] rounded-3xl bg-secondary
+  hover:bg-primary hover:text-secondary cursor-pointer
+  }
+  .btn_transparent {
+    @apply flex justify-center items-center gap-3 pl-4 py-1 pr-1 text-[16px] rounded-3xl bg-transparent border-secondary border-2
+    hover:bg-primary hover:text-secondary hover:border-none cursor-pointer
+  }
+  .btn_green_circle {
+    @apply flex justify-center items-center p-2 rounded-full bg-secondary
+    hover:bg-primary hover:text-secondary cursor-pointer
+  }
+  .regular-12 {
+    @apply text-[12px] font-[400] tracking-[0.48px]
+  }
+  .regular-14 {
+    @apply text-[14px] font-[400] tracking-[0.56px]
+  }
+  .regular-16 {
+    @apply text-[16px] font-[400] tracking-[0.64px]
+  }
+  .regular-18 {
+    @apply text-[18px] font-[400] tracking-[-0.72px]
+  }
+  .regular-20 {
+    @apply text-[20px] font-[400] tracking-[-0.8px]
+  }
+  .regular-28 {
+    @apply text-[28px] font-[400] tracking-[1px] leading-none
+  }
+  .regular-number {
+    @apply text-[28px] font-[300] tracking-[-1.12px]
+  }
+  .regular-36 {
+    @apply text-[36px] font-[400] tracking-[1px] leading-none
+  }
+  .bold-48 {
+    @apply text-[48px] font-[700] tracking-[1px] leading-none
+  }
 }
