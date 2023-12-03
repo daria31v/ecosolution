@@ -3,27 +3,27 @@ import Image from "next/image";
 const values = [
   {
     id: 1,
-    icon: "/images/svg/openness.svg",
+    icon: "/svg/openness.svg",
     title: "Openness",
     description: "to the world, people, new ideas and projects",
   },
   {
     id: 2,
-    icon: "/images/svg/responsibility.svg",
+    icon: "/svg/responsibility.svg",
     title: "Responsibility",
     description:
       "we are aware that the results of our work have an impact on our lives and the lives of future generations",
   },
   {
     id: 3,
-    icon: "/images/svg/innovation.svg",
+    icon: "/svg/innovation.svg",
     title: "Innovation",
     description:
       "we use the latest technology to implement non-standard solutions",
   },
   {
     id: 4,
-    icon: "/images/svg/quality.svg",
+    icon: "/svg/quality.svg",
     title: "Quality",
     description:
       "we do not strive to be the first among others, but we want to be the best in our business",
@@ -37,7 +37,7 @@ const ValuesList = () => {
       <li className=" w-[147px] bg-grey_light p-3">
         <div className="flex gap-1 items-center">
           <Image
-            src="/images/svg/openness.svg"
+            src="/svg/openness.svg"
             alt="icon"
             width={16}
             height={16}
@@ -51,7 +51,7 @@ const ValuesList = () => {
       <li className="w-[147px] bg-grey_light p-3">
         <div className="flex gap-1 items-center">
           <Image
-            src="/images/svg/responsibility.svg"
+            src="/svg/responsibility.svg"
             alt="icon"
             width={16}
             height={16}
@@ -81,7 +81,7 @@ const ValuesList = () => {
       <li className="w-[147px] bg-grey_light p-3">
       <div className="flex gap-2 items-center">
           <Image
-            src="/images/svg/innovation.svg"
+            src="/svg/innovation.svg"
             alt="icon"
             width={16}
             height={16}
@@ -94,7 +94,7 @@ const ValuesList = () => {
       <li className="w-[147px] bg-grey_light p-3">
       <div className="flex gap-2 items-center">
           <Image
-            src="/images/svg/quality.svg"
+            src="/svg/quality.svg"
             alt="icon"
             width={16}
             height={16}

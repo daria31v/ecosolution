@@ -12,7 +12,7 @@ const FAQSection = () => {
       <Button
       type='button'
       title='Contact Us'
-      icon='/images/svg/ellipse.svg'
+      icon='/svg/ellipse.svg'
       variant='btn_green'/>
      </div>
     </section>

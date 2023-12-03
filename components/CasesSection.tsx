@@ -10,10 +10,10 @@ const CasesSection = () => {
       <div>
         <span className="regular-28">01/05</span>
         <button>
-          <Image src="/images/svg/arrow-left.svg" alt="arrow-left" width={36} height={36}/>
+          <Image src="/svg/arrow-left.svg" alt="arrow-left" width={36} height={36}/>
         </button>
         <button>
-        <Image src="/images/svg/arrow-right.svg" alt="arrow-right" width={36} height={36}/>
+        <Image src="/svg/arrow-right.svg" alt="arrow-right" width={36} height={36}/>
         </button>
       </div>
       <SliderCases/>

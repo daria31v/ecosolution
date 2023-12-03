@@ -19,7 +19,7 @@ const MaineSection = () => {
         <Button
           type="button"
           title="Learn more"
-          icon="/images/svg/arrow-right.svg"
+          icon="/svg/arrow-right.svg"
           variant="btn_transparent"
         />
       </div>
