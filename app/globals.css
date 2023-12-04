@@ -40,6 +40,12 @@ textarea {
     @apply flex justify-center items-center px-3 py-3 rounded-full bg-secondary
     hover:bg-primary hover:text-secondary cursor-pointer
   }
+  .btn_menu {
+    @apply px-3 py-3 bg-green_light rounded-full ml-auto
+  }
+  .btn_close {
+    @apply flex justify-center items-center gap-1 p-1 text-[16px] text-white hover:text-secondary cursor-pointer  focus:text-secondary fill-secondary
+  }
   .regular-12 {
     @apply text-[12px] font-[400] tracking-[0.48px]
   }

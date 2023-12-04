@@ -18,6 +18,8 @@ const FAQSection = () => {
           title="Contact Us"
           icon="/svg/ellipse.svg"
           variant="btn_green"
+          width={20}
+          height={20}
         />
       </div>
     </section>

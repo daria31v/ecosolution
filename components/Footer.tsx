@@ -21,6 +21,8 @@ const Footer = () => {
           title=""
           icon="/svg/arrow-up.svg"
           variant="btn_green_circle"
+          width={16}
+          height={16}
         />
       </div>
       <div className="flex gap-2 justify-center my-6">

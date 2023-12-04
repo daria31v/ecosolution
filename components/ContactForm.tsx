@@ -128,7 +128,9 @@ const ContactForm: React.FC = () => {
       type="submit"
       title="Send"
       icon="/svg/arrow-right.svg"
-      variant="btn_transparent"/>
+      variant="btn_transparent"
+      width={16}
+      height={16}/>
       </div>
       </form>
     </div>

@@ -6,13 +6,16 @@ type ButtonProps = {
   title: string;
   icon?: string;
   variant: string;
+  onClick?: (()=> void) | undefined;
+  width: number,
+  height: number
 };
 
-const Button = ({ type, title, icon, variant }: ButtonProps) => {
+const Button = ({ type, title, icon, variant, onClick, width, height }: ButtonProps) => {
   return (
-    <button className={`${variant}`} type={type}>
+    <button className={`${variant}`} type={type} onClick={onClick}>
       <p>{title}</p>
-      {icon && <Image src={icon} alt={title} width={16} height={16} />}
+      {icon && <Image src={icon} alt={title} width={width} height={height} />}
     </button>
   );
 };
