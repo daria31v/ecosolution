@@ -23,7 +23,7 @@ const Footer = () => {
           variant="btn_green_circle"
         />
       </div>
-      <div className="flex gap-2 justify-center mt-6">
+      <div className="flex gap-2 justify-center my-6">
         <Image src='/svg/facebook.svg' alt='facebook' width={24} height={24} />
         <Image src='/svg/instagram.svg' alt='instagram' width={24} height={24} />
       </div>

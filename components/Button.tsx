@@ -12,7 +12,7 @@ const Button = ({ type, title, icon, variant }: ButtonProps) => {
   return (
     <button className={`${variant}`} type={type}>
       <p>{title}</p>
-      {icon && <Image src={icon} alt={title} width={14} height={14} />}
+      {icon && <Image src={icon} alt={title} width={16} height={16} />}
     </button>
   );
 };

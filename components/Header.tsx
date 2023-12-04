@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Header = () => {
   return (
-    <nav className="flex max-container padding-container items-center gap-3 bg-bg_burger_menu relative z-30l:px-20 3xl:px-0 py-5">
+    <nav className="flex max-container padding-container items-center gap-3 relative z-30 lg:px-20 3xl:px-0 py-5">
       <Link href="/">
         <Image
           src="/svg/logo.svg"

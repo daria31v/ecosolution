@@ -2,9 +2,9 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -15,8 +15,9 @@ const config: Config = {
         white: "#FFFFFF",
         black: "#292D32",
         grey: "#BDBDBD",
-        grey_light: '#EAEDF1',
+        grey_light: "#EAEDF1",
         green_25: "#173D3340",
+        red_error: '#D28B8B'
       },
       backgroundColor: {
         bg_main: "#F3F5FA",
@@ -26,9 +27,13 @@ const config: Config = {
       fontFamily: {
         main: ["Fira_Sans", "sans-serif"],
         extra: ["Oswald", "sans-serif"],
+      },
+      screens: {
+        'sm': {'min': '360px', 'max': '480px'},
+        'md': {'min': '768px', 'max': '1279px'},
+        'lg': {'min': '1280px'}
       }
-      
-    },
+    }
   },
   plugins: [],
 };

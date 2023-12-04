@@ -1,10 +1,12 @@
 import Image from "next/image";
+import ContactForm from "./ContactForm";
 
 
 const ContactUsSection = () => {
   return (
     <section className='max-container padding-container'>
       <h2 className="regular-28 font-extra text-center mt-9 uppercase">Contact us</h2>
+      <div className="my-6">
       <div>
         <p>Phone:</p>
         <span>
@@ -37,9 +39,8 @@ const ContactUsSection = () => {
         <Image src='/svg/instagram.svg' alt='instagram' width={24} height={24} />
         </span>
       </div>
-      <form className="bg-grey_light">
-
-      </form>
+      </div>
+      <ContactForm/>
     </section>
   )
 }

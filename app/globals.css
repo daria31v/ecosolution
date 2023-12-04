@@ -14,10 +14,16 @@ body {
   background: #f3f5fa;
   font-family: "Fira Sans", sans-serif;
 }
+input {
+  background-color: transparent;
+}
+textarea {
+  background-color: transparent;
+}
 
 @layer utilities {
   .max-container {
-    @apply mx-auto max-w-[1440px];
+    @apply mx-auto max-w-[1280px];
   }
   .padding-container {
     @apply px-6 xl:px-0
@@ -31,7 +37,7 @@ body {
     hover:bg-primary hover:text-secondary hover:border-none cursor-pointer
   }
   .btn_green_circle {
-    @apply flex justify-center items-center p-2 rounded-full bg-secondary
+    @apply flex justify-center items-center px-3 py-3 rounded-full bg-secondary
     hover:bg-primary hover:text-secondary cursor-pointer
   }
   .regular-12 {
@@ -60,5 +66,11 @@ body {
   }
   .bold-48 {
     @apply text-[48px] font-[700] tracking-[1px] leading-none
+  }
+  .bold-100 {
+    @apply text-[100px] font-[700] tracking-[1px] leading-none
+  }
+  .bold-164 {
+    @apply text-[164px] font-[700] tracking-[1px] leading-none
   }
 }

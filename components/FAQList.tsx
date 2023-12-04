@@ -50,7 +50,7 @@ const FAQList = () => {
     <>
       <ul>
         {questions.map((question) => (
-            <li key={question.id} className="">
+            <li key={question.id} className="text-justify">
               <div className="h-[1px] bg-secondary w-full mb-4"></div>
             <div className="">
               <Image src={question.icon} alt="icon" width={16} height={16} />
