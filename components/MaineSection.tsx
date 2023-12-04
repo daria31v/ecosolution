@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const MaineSection = () => {
   return (
-    <section className="max-container padding-container">
+    <section id="main" className="max-container padding-container">
       <div className="">
         <h1 className="pt-[146px] uppercase font-extra regular-36 mb-6">
           RENEWABLE ENERGY For any task
@@ -23,6 +23,7 @@ const MaineSection = () => {
           variant="btn_transparent"
           width={16}
           height={16}
+          href="cases"
         />
       </div>
 

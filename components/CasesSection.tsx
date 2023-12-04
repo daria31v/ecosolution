@@ -5,7 +5,7 @@ import SliderCases from "./SliderCases";
 
 const CasesSection = () => {
   return (
-    <section className='max-container padding-container'>
+    <section id="cases" className='max-container padding-container'>
       <h2 className="uppercase font-extra regular-28 mt-9 mb-6">Successful cases of our company</h2>
       <div>
         <span className="regular-28">01/05</span>

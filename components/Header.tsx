@@ -39,10 +39,10 @@ const Header = () => {
   const handleClose = () => {
     setIsOpen(false);
   };
-  console.log(isOpen);
+  // console.log(isOpen);
 
   return (
-    <div className={header ? "bg-white fixed w-full" : "bg-transparent"}>
+    <div className={header ? "bg-white fixed w-[1280px] mx-auto" : "bg-transparent"}>
       <header className="flex max-container padding-container items-center gap-3 relative z-1000 lg:px-20 3xl:px-0 py-5">
         <Link href="/">
           <Image
@@ -64,7 +64,7 @@ const Header = () => {
           height={16}
         />
 
-        <div className="md:flex hidden md:ml-3">
+        <div className="md:flex lg:flex hidden md:ml-3">
           <Button
             type="button"
             title="Get in thouch"
@@ -72,6 +72,7 @@ const Header = () => {
             variant="btn_green"
             width={14}
             height={14}
+            href="contact_us"
           />
         </div>
       </header>

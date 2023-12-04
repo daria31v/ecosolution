@@ -1,14 +1,14 @@
-import Link from 'next/link'
-
+import { Link } from 'react-scroll/modules';
 
 const Navbar = () => {
+
   return (
    <nav className="grid text-white">
-    <Link href='./main'>Main</Link>
-    <Link href='./about'>About</Link>
-    <Link href='./cases'>Cases</Link>
-    <Link href='./faq'>FAQ</Link>
-    <Link href='./contact_us'>Contact Us</Link>
+    <Link to='main'>Main</Link>
+    <Link to='about'>About</Link>
+    <Link to='cases'>Cases</Link>
+    <Link to='faq'>FAQ</Link>
+    <Link to='contact_us'>Contact Us</Link>
    </nav>
   )
 }

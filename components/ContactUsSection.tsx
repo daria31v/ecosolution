@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const ContactUsSection = () => {
   return (
-    <section className='max-container padding-container'>
+    <section id="contact_us" className='max-container padding-container'>
       <h2 className="regular-28 font-extra text-center mt-9 uppercase">Contact us</h2>
       <div className="my-6">
       <div>

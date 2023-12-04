@@ -23,6 +23,7 @@ const Footer = () => {
           variant="btn_green_circle"
           width={16}
           height={16}
+          href="main"
         />
       </div>
       <div className="flex gap-2 justify-center my-6">

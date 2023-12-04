@@ -5,7 +5,7 @@ import ValuesList from "./ValuesList";
 
 const AboutValuesSection = () => {
   return (
-    <section className="max-container padding-container">
+    <section id="about" className="max-container padding-container">
       <h2 className="mt-9 mb-6 uppercase font-extra regular-28">
         Main values of our <br/>company
       </h2>

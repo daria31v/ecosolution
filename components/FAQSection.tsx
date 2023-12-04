@@ -4,7 +4,7 @@ import FAQList from "./FAQList";
 
 const FAQSection = () => {
   return (
-    <section className="max-container padding-container">
+    <section id="faq" className="max-container padding-container">
       <h2 className="regular-28 font-extra uppercase mt-9 mb-6">
         Frequently Asked Questions
       </h2>
@@ -20,6 +20,7 @@ const FAQSection = () => {
           variant="btn_green"
           width={20}
           height={20}
+          href="contact_us"
         />
       </div>
     </section>
