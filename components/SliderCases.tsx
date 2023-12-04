@@ -89,7 +89,7 @@ const SliderCases = (): JSX.Element => {
       {displayedCases.length > 0 &&
           displayedCases.map((item) => (
           <div key={item.id}
-            className="mb-3 px-6 pt-6 pb-8 bg-grey_light md:max-w-[342px] 2xl:max-w-[596px]" >
+            className="mb-3 px-6 pt-6 pb-8 bg-grey_light md:max-w-[342px] " >
             <Image
               src={item.photo}
               alt="cases"
