@@ -1,8 +1,5 @@
 import ValuesList from "./ValuesList";
 
-
-
-
 const AboutValuesSection = () => {
   return (
     <section id="about" className="max-container padding-container">

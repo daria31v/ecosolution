@@ -53,7 +53,7 @@ const ContactForm: React.FC = () => {
             const newErrors: Errors = {};
             validationErrors.inner.forEach((error) => {
               if (error.path) {
-                // newErrors[error.path] = error.message;
+                console.error(error.message);
               }
             });
             setErrors(newErrors);
@@ -72,15 +72,14 @@ const ContactForm: React.FC = () => {
 
 
   return (
-    <div className="bg-grey_light px-3 py-9  regular-16">
-      <form className="grid grid-cols-1 gap-7" onSubmit={handleSubmit}>
+    <div className="bg-grey_light px-3 py-9 regular-16 max-w-[320px] xl:max-w-[342px] 2xl:max-w-[596px]">
+      <form className="grid grid-cols-1 gap-7" onSubmit={handleSubmit} autoComplete='none'>
       <label className="block">
         <span className="grid gap-2">* Full name:</span>
           <input
             type="text"
             name="full name"
             placeholder="John Rosie"
-            required
             className="regular-18"/>
             
           <div className="h-[1px] bg-secondary w-full mt-2"></div>
@@ -90,10 +89,11 @@ const ContactForm: React.FC = () => {
        <label className="block">
         <span className="grid gap-2">* E-mail:</span>
           <input
-            type="e-mail"
+            type="email"
             name="e-mail"
             placeholder="johnrosie@gmail.com"
             required
+            
             className="regular-18"
           />
           <div className="h-[1px] bg-secondary w-full mt-2"></div>
@@ -107,6 +107,7 @@ const ContactForm: React.FC = () => {
             name="phone"
             placeholder="380961234567"
             required
+           
             className="regular-18"
           />
           {!errors.phone && <div className="h-[1px] bg-secondary w-full mt-2"></div>}
@@ -118,7 +119,7 @@ const ContactForm: React.FC = () => {
           <textarea
             name="comment"
             placeholder="My message...."
-            className="h-[147px] regular-18"
+            className="h-[147px] w-full regular-18"
           ></textarea>
           <div className="h-[1px] bg-secondary w-full mt-2"></div>
         </label>
@@ -130,7 +131,10 @@ const ContactForm: React.FC = () => {
       icon="/svg/arrow-right.svg"
       variant="btn_transparent"
       width={16}
-      height={16}/>
+      height={16}
+      // href=''
+      />
+      
       </div>
       </form>
     </div>

@@ -1,25 +1,24 @@
 import Image from "next/image";
-import React, { Children } from "react";
-// import { Link } from "react-scroll";
+import React from "react";
+
 
 type ButtonProps = {
-  type: "button" | "submit";
+  type?: "button" | "submit";
   title: string;
-  icon?: string;
   variant: string;
-  onClick?: (()=> void) | undefined;
-  width: number,
-  height: number,
-  href?: string | undefined
-}
-const Button = ({ type, title, icon, variant, onClick, width, height, href }: ButtonProps) => {
+  width: number;
+  height: number;
+  icon?: string;
+  onClick?: (() => void);
+
+};
+
+const Button = ({ type, title, icon, variant, width, height, onClick }: ButtonProps) => {
   return (
-    // <Link to={href}>
     <button className={`${variant}`} type={type} onClick={onClick}>
       <p>{title}</p>
       {icon && <Image src={icon} alt={title} width={width} height={height} />}
     </button>
-//* </Link> */}
   );
 };
 

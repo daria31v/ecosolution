@@ -21,3 +21,14 @@
 //       invalid:border-pink-500 invalid:text-pink-600
 //       focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
 //           />
+
+
+{/* <div className="my-9 w-full max-w-1240px relative aspect-video overflow-hidden z-10">
+        <Image
+          alt="turbine"
+          src="/images/lg-turbine.png"
+          fill
+          sizes="(max-width: 468px) 100vw, 320px; (max-width: 768px) 100vw, 708px; (max-width: 1280px) 100vw, 1240px"
+          priority
+        />
+      </div> */}

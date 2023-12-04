@@ -21,7 +21,7 @@ const config: Config = {
       },
       backgroundColor: {
         bg_main: "#F3F5FA",
-        bg_card: "#EAEDF1",
+        bg_card: "#EAEDF1", 
         bg_burger_menu: "#173D33BF",
       },
       fontFamily: {
@@ -29,9 +29,10 @@ const config: Config = {
         extra: ["Oswald", "sans-serif"],
       },
       screens: {
-        'sm': {'min': '360px', 'max': '480px'},
-        'md': {'min': '768px', 'max': '1279px'},
-        'lg': {'min': '1280px'}
+        'sm': '360px',
+        'xl': '768px',
+        '2xl': '1280px'
+        
       }
     }
   },

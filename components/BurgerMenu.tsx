@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from "react";
 import Button from "./Button";
 import Navbar from "./Navbar";
@@ -28,9 +29,10 @@ const BurgerMenu = () => {
             variant="btn_close"
             width={8}
             height={8}
+            
           />
           <div className="h-[1px] bg-white w-full mb-4"></div>
-          <Navbar state={isOpen} />
+          <Navbar />
         </div>
       )}
     </div>

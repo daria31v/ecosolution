@@ -48,23 +48,25 @@ interface Question {
 const FAQList = () => {
   return (
     <>
-      <ul>
+      <ul className="max-w-[320px] xl:max-w-[342px] 2xl:max-w-[596px]">
         {questions.map((question) => (
-            <li key={question.id} className="text-justify">
-              <div className="h-[1px] bg-secondary w-full mb-4"></div>
-            <div className="">
-              <Image src={question.icon} alt="icon" width={16} height={16} />
+          <li key={question.id} className="text-justify">
+            <div className="h-[1px] bg-secondary w-full mb-4"></div>
+            <div className="grid grid-cols-6">
+              <div>
+                <Image src={question.icon} alt="icon" width={16} height={16} />
+              </div>
+              <div className="mb-6 col-span-5">
+                <p className="regular-18">{question.question}</p>
+                <p className="regular-14">{question.answer}</p>
+              </div>
             </div>
-            <div>
-              <p className="regular-18">{question.question}</p>
-              <p className="regular-14">{question.answer}</p>
-            </div>
+            <div></div>
           </li>
         ))}
       </ul>
     </>
   );
 };
-
 
 export default FAQList;

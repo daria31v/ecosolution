@@ -16,7 +16,7 @@ type Case = {
   date: string;
 };
 
-const SliderCases = (): JSX.Element => {
+const SliderCasesSmall = (): JSX.Element => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [casesList, setCasesList] = useState<Case[]>([]);
 
@@ -66,39 +66,31 @@ const SliderCases = (): JSX.Element => {
  
 
   const prevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? casesList.length - 1 : prevSlide - 1));
-    
+    const isFirstSlide = currentSlide === 0;
+    const newIndex = isFirstSlide ? casesList.length - 1 : currentSlide - 1;
+    setCurrentSlide(newIndex);
   };
-
   const nextSlide = () => {
     const isLastSlide = currentSlide === casesList.length - 1;
     const newIndex = isLastSlide ? 0 : currentSlide + 1;
     setCurrentSlide(newIndex);
   };
 
-  const startIndex = currentSlide * 2;
-
-  const endIndex = startIndex + 2;
- 
-  const displayedCases = casesList.slice(startIndex, endIndex);
-
-
   return (
     <div id="slider" className="relative group">
-      <div className="flex gap-6 justify-center items-center h-full">
-      {displayedCases.length > 0 &&
-          displayedCases.map((item) => (
-          <div key={item.id}
-            className="mb-3 px-6 pt-6 pb-8 bg-grey_light md:max-w-[342px] 2xl:max-w-[596px]" >
+      <div className="">
+      {casesList.length > 0 &&
+          (<div key={casesList[currentSlide].id}
+            className="mb-3 px-6 pt-6 pb-8 bg-grey_light max-w-[320px]" >
             <Image
-              src={item.photo}
+              src={casesList[currentSlide].photo}
               alt="cases"
               width={320}
             />
             <div className="flex justify-center items-center">
 
-            <h4 className="mt-4 regular-18 h-[100px]">
-              {item.name}
+            <h4 className="mt-4 regular-18">
+              {casesList[currentSlide].name}
             </h4>
             <Button
               type="button"
@@ -111,11 +103,11 @@ const SliderCases = (): JSX.Element => {
               </div>
              <div className="h-[1px] bg-secondary w-full mt-[21px]"></div>
             <div className="flex justify-between items-center regular-12 mt-4">
-              <p >{item.product}</p>
-              <p >{item.date}</p>
+              <p >{casesList[currentSlide].product}</p>
+              <p >{casesList[currentSlide].date}</p>
             </div>
           </div>
-          ))}
+          )}
       </div>
     
       {currentSlide !== 0 && (
@@ -123,7 +115,7 @@ const SliderCases = (): JSX.Element => {
          <Image src="/svg/arrow.svg" alt="arrow" width={28} height={28} onClick={prevSlide} className=" relative top-[-50px] right-[-10px]"/>
         </button>
       )}
-      {currentSlide !== casesList.length - 2 && (
+      {currentSlide !== casesList.length - 1 && (
         <button className=" cursor-pointer">
           <Image src="/svg/arrow.svg" alt="arrow" width={28} height={28} onClick={nextSlide} className=" relative top-[-50px] right-[-250px]"/>
         </button>
@@ -132,4 +124,4 @@ const SliderCases = (): JSX.Element => {
   );
 };
 
-export default SliderCases;
+export default SliderCasesSmall;
